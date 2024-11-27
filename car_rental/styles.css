@@ -1,0 +1,233 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f9;
+    color: #333;
+}
+
+h2, h3 {
+    color: #004aad;
+    text-align: center;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Navbar */
+.navbar {
+    background: #004aad;
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+    font-size: 1em;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.navbar a:hover {
+    background: #003180;
+}
+
+/* Form Styling */
+form {
+    background: #fff;
+    margin: 2em auto;
+    padding: 2em;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+            backdrop-filter: blur(10px); /* Apply blur effect */
+}
+
+form input, form select, form button {
+    width: 100%;
+    margin: 0.5em 0;
+    padding: 0.8em;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input:focus, form select:focus {
+    outline: none;
+    border-color: #004aad;
+}
+
+form button {
+    background: #004aad;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #003180;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    margin: 2em 0;
+    border-collapse: collapse;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    padding: 1em;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background: #004aad;
+    color: #fff;
+}
+
+table tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+table tr:hover {
+    background: #f1f1f1;
+    cursor: pointer;
+}
+
+/* Buttons */
+button {
+    background: #004aad;
+    color: #fff;
+    padding: 0.5em 1em;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #003180;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+form, table, .navbar {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    form {
+        width: 95%;
+    }
+
+    table {
+        font-size: 0.9em;
+    }
+}
+/* Header Styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #00ff84;
+    padding: 1em 2em;
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header h2 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.nav-links a {
+    margin-left: 1em;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    background: #003180;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.nav-links a:hover {
+    background: #002060;
+}
+
+.logout {
+    background: #d9534f;
+}
+
+.logout:hover {
+    background: #c9302c;
+}
+
+/* Main Content */
+main {
+    padding: 2em;
+}
+.button {
+    display: inline-block;
+    padding: 0.5em 1em;
+    background: #28a745;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.button:hover {
+    background: #218838;
+}
+form p {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+}
+
+form p a {
+    color: #007bff; /* Blue color for the link */
+    text-decoration: none; /* Removes underline */
+    font-weight: bold; /* Makes the link stand out */
+    transition: color 0.3s ease;
+}
+
+form p a:hover {
+    color: #0056b3; /* Darker shade on hover */
+    text-decoration: underline; /* Adds underline on hover */
+}
